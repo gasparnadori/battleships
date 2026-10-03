@@ -12,3 +12,7 @@ C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\
 C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.pdb
 C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.genruntimeconfig.cache
 C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\ref\battleships.dll
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.sourcelink.json
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.csproj.GenerateResource.cache
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.Battleship.WinForms.StartMenu.resources
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.Battleship.WinForms.GameSetup.resources
