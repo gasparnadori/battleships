@@ -53,9 +53,11 @@ partial class StartMenu
         // 
         newGameBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
         newGameBtn.BackColor = System.Drawing.Color.Transparent;
+        newGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+        newGameBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
         newGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         newGameBtn.Font = new System.Drawing.Font("Unispace", 20.249998F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
-        newGameBtn.ForeColor = System.Drawing.Color.LightGray;
+        newGameBtn.ForeColor = System.Drawing.Color.Transparent;
         newGameBtn.Location = new System.Drawing.Point(182, 359);
         newGameBtn.Name = "newGameBtn";
         newGameBtn.Size = new System.Drawing.Size(201, 64);
@@ -67,9 +69,11 @@ partial class StartMenu
         // loadBtn
         // 
         loadBtn.BackColor = System.Drawing.Color.Transparent;
+        loadBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)((byte)0)), ((int)((byte)64)), ((int)((byte)64)));
+        loadBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
         loadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         loadBtn.Font = new System.Drawing.Font("Unispace", 20.249998F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
-        loadBtn.ForeColor = System.Drawing.Color.LightGray;
+        loadBtn.ForeColor = System.Drawing.Color.Transparent;
         loadBtn.Location = new System.Drawing.Point(480, 359);
         loadBtn.Name = "loadBtn";
         loadBtn.Size = new System.Drawing.Size(201, 64);
