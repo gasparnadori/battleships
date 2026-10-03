@@ -1,0 +1,14 @@
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\bin\Debug\net10.0-windows\battleships.exe
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\bin\Debug\net10.0-windows\battleships.deps.json
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\bin\Debug\net10.0-windows\battleships.runtimeconfig.json
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\bin\Debug\net10.0-windows\battleships.dll
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\bin\Debug\net10.0-windows\battleships.pdb
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.AssemblyInfoInputs.cache
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.AssemblyInfo.cs
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.csproj.CoreCompileInputs.cache
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.dll
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\refint\battleships.dll
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.pdb
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\battleships.genruntimeconfig.cache
+C:\Users\nador\Documents\programozas\LeetCode\battleships\battleships\obj\Debug\net10.0-windows\ref\battleships.dll
