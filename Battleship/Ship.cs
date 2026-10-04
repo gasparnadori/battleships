@@ -5,12 +5,15 @@ public class Ship
     
     public int Size {get; private set;}
     public int Life { get; private set; }
-    public int Orientation { get; private set; }  // vertical: v - hprizontal: h
+    public char Orientation { get; private set; }  // vertical: v - hprizontal: h
     public (int,int) StartLocation { get; private set; }  // (x,y) tuple
 
-    public Ship(int size)
+    public Ship(int size, (int, int) startLocation, char orientation)
     {
         Size = size;
+        StartLocation = startLocation;
+        Orientation = orientation;
+        Life = size;
     }
 
     public (int,int)[] GetLocation()
