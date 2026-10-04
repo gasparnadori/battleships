@@ -44,7 +44,7 @@ public class Player
         return result;
     }
 
-    public int Soanr(int x, int y, Player opponent)
+    public int Sonar(int x, int y, Player opponent)
     {
         if (SonarCooldown > 0) return -1;
         

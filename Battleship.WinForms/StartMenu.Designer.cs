@@ -35,6 +35,7 @@ partial class StartMenu
         title = new System.Windows.Forms.Label();
         newGameBtn = new System.Windows.Forms.Button();
         loadBtn = new System.Windows.Forms.Button();
+        qiut = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // title
@@ -81,6 +82,24 @@ partial class StartMenu
         loadBtn.Text = "Load game";
         loadBtn.UseVisualStyleBackColor = false;
         // 
+        // qiut
+        // 
+        qiut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        qiut.BackColor = System.Drawing.Color.Transparent;
+        qiut.FlatAppearance.BorderSize = 0;
+        qiut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+        qiut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCoral;
+        qiut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        qiut.Font = new System.Drawing.Font("Unispace", 20.249998F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
+        qiut.ForeColor = System.Drawing.Color.IndianRed;
+        qiut.Location = new System.Drawing.Point(343, 457);
+        qiut.Name = "qiut";
+        qiut.Size = new System.Drawing.Size(201, 64);
+        qiut.TabIndex = 3;
+        qiut.Text = "Quit";
+        qiut.UseVisualStyleBackColor = false;
+        qiut.Click += qiut_Click;
+        // 
         // StartMenu
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -88,6 +107,7 @@ partial class StartMenu
         BackgroundImage = ((System.Drawing.Image)resources.GetObject("$this.BackgroundImage"));
         BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
         ClientSize = new System.Drawing.Size(905, 533);
+        Controls.Add(qiut);
         Controls.Add(loadBtn);
         Controls.Add(newGameBtn);
         Controls.Add(title);
@@ -97,6 +117,8 @@ partial class StartMenu
         Text = "Battleship";
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Button qiut;
 
     private System.Windows.Forms.Button loadBtn;
 

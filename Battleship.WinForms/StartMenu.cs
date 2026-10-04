@@ -14,4 +14,9 @@ public partial class StartMenu : Form
 
         this.Hide();
     }
+
+    private void qiut_Click(object sender, EventArgs e)
+    {
+        this.Close();
+    }
 }

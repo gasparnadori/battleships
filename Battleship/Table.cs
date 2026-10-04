@@ -62,6 +62,7 @@ public class Table
 
     public int SonarAt((int, int) coord)
     {
+        //ship pointers in a 3x3 square
         int count = 0;
         for (int x = -1; x <= 1; x++)
         {
