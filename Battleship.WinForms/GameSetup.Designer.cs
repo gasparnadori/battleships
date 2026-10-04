@@ -72,7 +72,7 @@ partial class GameSetup
         button4.Name = "button4";
         button4.Size = new System.Drawing.Size(335, 48);
         button4.TabIndex = 5;
-        button4.Text = "Start battle!";
+        button4.Text = "Start the battle!";
         button4.UseVisualStyleBackColor = false;
         // 
         // btn8
@@ -85,7 +85,7 @@ partial class GameSetup
         btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         btn8.Font = new System.Drawing.Font("Unispace", 21.75F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
         btn8.ForeColor = System.Drawing.Color.Transparent;
-        btn8.Location = new System.Drawing.Point(252, 326);
+        btn8.Location = new System.Drawing.Point(245, 328);
         btn8.Name = "btn8";
         btn8.Size = new System.Drawing.Size(116, 54);
         btn8.TabIndex = 6;
@@ -104,7 +104,7 @@ partial class GameSetup
         btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         btn10.Font = new System.Drawing.Font("Unispace", 21.75F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
         btn10.ForeColor = System.Drawing.Color.Transparent;
-        btn10.Location = new System.Drawing.Point(395, 326);
+        btn10.Location = new System.Drawing.Point(388, 328);
         btn10.Name = "btn10";
         btn10.Size = new System.Drawing.Size(116, 54);
         btn10.TabIndex = 7;
@@ -123,7 +123,7 @@ partial class GameSetup
         btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         btn12.Font = new System.Drawing.Font("Unispace", 21.75F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
         btn12.ForeColor = System.Drawing.Color.Transparent;
-        btn12.Location = new System.Drawing.Point(550, 326);
+        btn12.Location = new System.Drawing.Point(543, 328);
         btn12.Name = "btn12";
         btn12.Size = new System.Drawing.Size(116, 54);
         btn12.TabIndex = 8;
