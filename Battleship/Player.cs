@@ -4,7 +4,7 @@ public class Player
 {
     public string Name { get; private set; }
     public List<Ship> Ships { get; private set; }
-    private Queue<int> _shipsToPlace;
+    public Queue<int> ShipsToPlace  { get; private set; }
     public Table OwnTable { get;  private set; }
     public ShootResult?[,] OppTable { get; private set; }
     public int SonarCooldown { get; private set; }
@@ -13,7 +13,7 @@ public class Player
     {
         Name = name;
         Ships = new List<Ship>();
-        _shipsToPlace = new Queue<int>(shipSizes);
+        ShipsToPlace = new Queue<int>(shipSizes);
         OwnTable = ownTable;
         OppTable = new ShootResult?[OwnTable.Size, OwnTable.Size];
         SonarCooldown = 0;
@@ -22,9 +22,9 @@ public class Player
     public bool PlaceShip(int x, int y, char orientation)
     {
         //all ships placed
-        if (_shipsToPlace.Count==0) return false;
+        if (ShipsToPlace.Count==0) return false;
 
-        int size = _shipsToPlace.Peek();
+        int size = ShipsToPlace.Peek();
         Ship ship = new Ship(size, (x, y), orientation);
         
         bool canPlaced = OwnTable.PlaceShip(ship);
@@ -32,7 +32,7 @@ public class Player
         if (canPlaced)
         {
             Ships.Add(ship);
-            _shipsToPlace.Dequeue();
+            ShipsToPlace.Dequeue();
         }
         return canPlaced;
     }

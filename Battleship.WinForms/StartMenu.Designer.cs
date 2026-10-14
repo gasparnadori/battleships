@@ -43,7 +43,7 @@ partial class StartMenu
         title.BackColor = System.Drawing.Color.Transparent;
         title.Font = new System.Drawing.Font("Unispace", 36F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
         title.ForeColor = System.Drawing.Color.LightGray;
-        title.Location = new System.Drawing.Point(295, 149);
+        title.Location = new System.Drawing.Point(472, 176);
         title.Name = "title";
         title.Size = new System.Drawing.Size(318, 79);
         title.TabIndex = 0;
@@ -59,7 +59,7 @@ partial class StartMenu
         newGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         newGameBtn.Font = new System.Drawing.Font("Unispace", 20.249998F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
         newGameBtn.ForeColor = System.Drawing.Color.Transparent;
-        newGameBtn.Location = new System.Drawing.Point(182, 359);
+        newGameBtn.Location = new System.Drawing.Point(372, 342);
         newGameBtn.Name = "newGameBtn";
         newGameBtn.Size = new System.Drawing.Size(201, 64);
         newGameBtn.TabIndex = 1;
@@ -75,7 +75,7 @@ partial class StartMenu
         loadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         loadBtn.Font = new System.Drawing.Font("Unispace", 20.249998F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
         loadBtn.ForeColor = System.Drawing.Color.Transparent;
-        loadBtn.Location = new System.Drawing.Point(480, 359);
+        loadBtn.Location = new System.Drawing.Point(670, 342);
         loadBtn.Name = "loadBtn";
         loadBtn.Size = new System.Drawing.Size(201, 64);
         loadBtn.TabIndex = 2;
@@ -92,7 +92,7 @@ partial class StartMenu
         qiut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         qiut.Font = new System.Drawing.Font("Unispace", 20.249998F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
         qiut.ForeColor = System.Drawing.Color.IndianRed;
-        qiut.Location = new System.Drawing.Point(343, 457);
+        qiut.Location = new System.Drawing.Point(533, 440);
         qiut.Name = "qiut";
         qiut.Size = new System.Drawing.Size(201, 64);
         qiut.TabIndex = 3;
@@ -106,7 +106,7 @@ partial class StartMenu
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackgroundImage = ((System.Drawing.Image)resources.GetObject("$this.BackgroundImage"));
         BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-        ClientSize = new System.Drawing.Size(905, 533);
+        ClientSize = new System.Drawing.Size(1289, 677);
         Controls.Add(qiut);
         Controls.Add(loadBtn);
         Controls.Add(newGameBtn);

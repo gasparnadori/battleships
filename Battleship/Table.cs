@@ -68,7 +68,7 @@ public class Table
         {
             for (int y = -1; y <= 1; y++)
             {
-                if (coord.Item1 + x >= 0 && coord.Item1 + x < Size && coord.Item2 + y >= 0 && coord.Item2 < Size)
+                if (coord.Item1 + x >= 0 && coord.Item1 + x < Size && coord.Item2 + y >= 0 && coord.Item2 + y < Size)
                 {
                     if (_Table[coord.Item1 + x, coord.Item2 + y] != null) count++;
                 }

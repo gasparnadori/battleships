@@ -15,6 +15,12 @@
       <Compile Update="Battleship.WinForms\GameSetup.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="Battleship.WinForms\ShipPlacement.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Battleship.WinForms\GameBoard.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
