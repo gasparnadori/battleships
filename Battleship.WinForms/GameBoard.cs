@@ -15,7 +15,7 @@ public partial class GameBoard : Form
 
         _model = model;
         _size = _model.TableSize;
-        _activePlayer = 0;
+        _activePlayer = _model.ActivePlayer;
         _sonarMode = false;
         _ownGrid = new Button[_size, _size];
         _oppGrid = new Button[_size, _size];
@@ -215,6 +215,55 @@ public partial class GameBoard : Form
         if (_sonarMode)
         {
             MessageBox.Show("Click a cell on the opponent board to use sonar.");
+        }
+    }
+
+    private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        StartMenu menu=new StartMenu();
+        if (MessageBox.Show("Save before exit?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+        {
+            using SaveFileDialog dialog = new();
+            dialog.Filter = "Battleship Save (*.txt)|*.txt";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    _model.ActivePlayer = _activePlayer;
+                    _model.Save(dialog.FileName);
+                    MessageBox.Show("Game saved!");
+                }
+                catch (IOException ex)
+                {
+                    MessageBox.Show("Failed to save: " + ex.Message);
+                }
+            }
+            menu.Show();
+            this.Close();
+        }
+        else
+        {
+            menu.Show();
+            this.Close();
+        }
+    }
+
+    private void saveBtn_Click(object sender, EventArgs e)
+    {
+        using SaveFileDialog dialog = new();
+        dialog.Filter = "Battleship Save (*.txt)|*.txt";
+        if (dialog.ShowDialog() == DialogResult.OK)
+        {
+            try
+            {
+                _model.ActivePlayer = _activePlayer;
+                _model.Save(dialog.FileName);
+                MessageBox.Show("Game saved!");
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show("Failed to save: " + ex.Message);
+            }
         }
     }
 }

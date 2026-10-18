@@ -38,6 +38,10 @@ partial class GameBoard
         oppBoardLabel = new System.Windows.Forms.Label();
         sonarBtn = new System.Windows.Forms.Button();
         sonarCooldownLabel = new System.Windows.Forms.Label();
+        menuStrip1 = new System.Windows.Forms.MenuStrip();
+        exitBtn = new System.Windows.Forms.ToolStripMenuItem();
+        saveBtn = new System.Windows.Forms.ToolStripMenuItem();
+        menuStrip1.SuspendLayout();
         SuspendLayout();
         // 
         // turnLabel
@@ -49,7 +53,7 @@ partial class GameBoard
         turnLabel.Name = "turnLabel";
         turnLabel.Size = new System.Drawing.Size(350, 38);
         turnLabel.TabIndex = 0;
-        turnLabel.Text = "Player 1's turn";
+        turnLabel.Text = "Player 1\'s turn";
         // 
         // shipsRemainingLabel
         // 
@@ -112,6 +116,34 @@ partial class GameBoard
         sonarCooldownLabel.Text = "Ready";
         sonarCooldownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
+        // menuStrip1
+        // 
+        menuStrip1.BackColor = System.Drawing.Color.Transparent;
+        menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+        menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { exitBtn, saveBtn });
+        menuStrip1.Location = new System.Drawing.Point(0, 653);
+        menuStrip1.Name = "menuStrip1";
+        menuStrip1.Size = new System.Drawing.Size(1289, 24);
+        menuStrip1.TabIndex = 6;
+        menuStrip1.Text = "menuStrip1";
+        // 
+        // exitBtn
+        // 
+        exitBtn.BackColor = System.Drawing.Color.IndianRed;
+        exitBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+        exitBtn.Name = "exitBtn";
+        exitBtn.Size = new System.Drawing.Size(38, 20);
+        exitBtn.Text = "Exit";
+        exitBtn.Click += saveToolStripMenuItem_Click;
+        // 
+        // saveBtn
+        // 
+        saveBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+        saveBtn.Name = "saveBtn";
+        saveBtn.Size = new System.Drawing.Size(43, 20);
+        saveBtn.Text = "Save";
+        saveBtn.Click += saveBtn_Click;
+        // 
         // GameBoard
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -125,12 +157,22 @@ partial class GameBoard
         Controls.Add(ownBoardLabel);
         Controls.Add(shipsRemainingLabel);
         Controls.Add(turnLabel);
+        Controls.Add(menuStrip1);
         DoubleBuffered = true;
         Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
+        MainMenuStrip = menuStrip1;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "GameBoard";
+        menuStrip1.ResumeLayout(false);
+        menuStrip1.PerformLayout();
         ResumeLayout(false);
+        PerformLayout();
     }
+
+    private System.Windows.Forms.ToolStripMenuItem exitBtn;
+    private System.Windows.Forms.ToolStripMenuItem saveBtn;
+
+    private System.Windows.Forms.MenuStrip menuStrip1;
 
     #endregion
 

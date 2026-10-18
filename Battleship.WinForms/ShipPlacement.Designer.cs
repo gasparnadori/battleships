@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 
 namespace battleships.Battleship.WinForms;
 
@@ -34,6 +34,7 @@ partial class ShipPlacement
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShipPlacement));
         rotateBtn = new System.Windows.Forms.Button();
         doneBtn = new System.Windows.Forms.Button();
+        autoPlaceBtn = new System.Windows.Forms.Button();
         playerLabel = new System.Windows.Forms.Label();
         shipLabel = new System.Windows.Forms.Label();
         orientationLabel = new System.Windows.Forms.Label();
@@ -70,6 +71,22 @@ partial class ShipPlacement
         doneBtn.Text = "Done!";
         doneBtn.UseVisualStyleBackColor = false;
         doneBtn.Click += doneBtn_Click;
+        // 
+        // autoPlaceBtn
+        // 
+        autoPlaceBtn.BackColor = System.Drawing.Color.Transparent;
+        autoPlaceBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+        autoPlaceBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
+        autoPlaceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        autoPlaceBtn.Font = new System.Drawing.Font("Unispace", 11.999998F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
+        autoPlaceBtn.ForeColor = System.Drawing.Color.Transparent;
+        autoPlaceBtn.Location = new System.Drawing.Point(161, 610);
+        autoPlaceBtn.Name = "autoPlaceBtn";
+        autoPlaceBtn.Size = new System.Drawing.Size(150, 42);
+        autoPlaceBtn.TabIndex = 5;
+        autoPlaceBtn.Text = "Auto Place";
+        autoPlaceBtn.UseVisualStyleBackColor = false;
+        autoPlaceBtn.Click += autoPlaceBtn_Click;
         // 
         // playerLabel
         // 
@@ -116,6 +133,7 @@ partial class ShipPlacement
         Controls.Add(playerLabel);
         Controls.Add(doneBtn);
         Controls.Add(rotateBtn);
+        Controls.Add(autoPlaceBtn);
         DoubleBuffered = true;
         Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -132,6 +150,8 @@ partial class ShipPlacement
     private System.Windows.Forms.Button doneBtn;
 
     private System.Windows.Forms.Button rotateBtn;
+
+    private System.Windows.Forms.Button autoPlaceBtn;
 
     #endregion
 }

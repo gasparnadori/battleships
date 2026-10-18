@@ -81,6 +81,7 @@ partial class StartMenu
         loadBtn.TabIndex = 2;
         loadBtn.Text = "Load game";
         loadBtn.UseVisualStyleBackColor = false;
+        loadBtn.Click += loadBtn_Click;
         // 
         // qiut
         // 

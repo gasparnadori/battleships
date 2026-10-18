@@ -181,4 +181,30 @@ public partial class ShipPlacement : Form
             this.Close();
         }
     }
+
+    private void autoPlaceBtn_Click(object sender, EventArgs e)
+    {
+        Random rng = new Random();
+        char[] orientations = ['h', 'v'];
+        int startingPlayer = _playerNumber;
+
+        while (_ships.Count > 0 && _playerNumber == startingPlayer)
+        {
+            bool placed = false;
+            while (!placed)
+            {
+                int x = rng.Next(_size);
+                int y = rng.Next(_size);
+                char orient = orientations[rng.Next(2)];
+
+                placed = _currentPlayer.PlaceShip(x, y, orient);
+
+                if (placed)
+                {
+                    HighlightShip(y, x, orient);
+                    Advance();
+                }
+            }
+        }
+    }
 }

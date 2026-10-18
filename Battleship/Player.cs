@@ -7,7 +7,7 @@ public class Player
     public Queue<int> ShipsToPlace  { get; private set; }
     public Table OwnTable { get;  private set; }
     public ShootResult?[,] OppTable { get; private set; }
-    public int SonarCooldown { get; private set; }
+    public int SonarCooldown { get; set; }
     
     public Player(string name, List<int> shipSizes, Table ownTable)
     {
